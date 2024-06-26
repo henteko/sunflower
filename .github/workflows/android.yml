@@ -34,7 +34,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Test
-        run echo "Test echo"
+        run: echo "Test echo"
       - name: Build project
         run: .github/scripts/gradlew_recursive.sh assembleDebug
       - name: Zip artifacts
